@@ -62,7 +62,7 @@ def plot_2D(path, i, name):
     fig = plt.figure(i)
 
     fig.set_size_inches(8, 4)
-    fig.subplots_adjust(left=0.1, bottom=0.2)  # 一些设置
+    fig.subplots_adjust(left=0.13, bottom=0.2)  # 一些设置
 
     plt.plot(x, e1 * 100, "r.", label="dN"+" std="+str(round(std_e,3)))
     plt.plot(x, n1 * 100, "b.", label="dE"+" std="+str(round(std_n,3)))
@@ -126,7 +126,7 @@ def plot_H(path, i, name):
     fig1 = plt1.figure(i+1)
 
     fig1.set_size_inches(8, 4)
-    fig1.subplots_adjust(left=0.1, bottom=0.2)  # 一些设置
+    fig1.subplots_adjust(left=0.13, bottom=0.2)  # 一些设置
 
     plt1.plot(x, u1 * 100, "g.", label="dU"+" std="+str(round(std_u,3)))  # alpha=0.2 透明度
 
